@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Project Tracker</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="gate">
+  <form id="gate-form">
+    <h1>Project Tracker</h1>
+    <p class="gate-sub">Content is encrypted client-side. Enter the password to view it.</p>
+    <input id="gate-password" type="password" placeholder="Password" autocomplete="current-password" autofocus />
+    <button type="submit">Unlock</button>
+    <p id="gate-error" class="gate-error" hidden>Incorrect password.</p>
+  </form>
+</div>
+
+<div id="app" hidden>
+  <button id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+  <nav id="sidebar"></nav>
+  <main id="content"></main>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

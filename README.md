@@ -6,6 +6,7 @@ A plain-git, no-external-tool tracker for lmacwan's active projects. No Jira/Asa
 - Each active project has its own file in [`projects/`](projects/) — status, what's built, what's pending, key decisions.
 - [`RUNNER.md`](RUNNER.md) is the cross-project reference doc: reusable components, conventions, and lessons learned across all projects, meant to inform decisions on the *next* project before it starts.
 - To refresh: ask Claude to "update the project tracker" — it re-reads each repo's actual commit history and memory files (not just this doc, which can drift) and reconciles.
+- [`site/`](site/) is a small password-gated web UI over these same docs — see [site/README.md](site/README.md) to deploy it. It rebuilds straight from this repo, so a host connected to auto-deploy on push stays current automatically.
 
 ## Dashboard
 
